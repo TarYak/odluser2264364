@@ -18,9 +18,6 @@ app.get('/', (req, res) => {
             res.status(500).send('Error reading the inventory data');
             return;
         }
-
-        const cars = JSON.parse(data);
-        res.render('inventory', { cars: cars });
     });
 });
 
